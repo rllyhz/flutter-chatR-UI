@@ -5,7 +5,7 @@ import 'components/body.dart';
 import 'screen_arguments.dart';
 
 class ChatScreen extends StatelessWidget {
-  static String route = '/ChatScreen';
+  static String route = '/chat';
 
   const ChatScreen({Key? key}) : super(key: key);
 
