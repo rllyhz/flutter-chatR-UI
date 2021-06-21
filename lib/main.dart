@@ -1,3 +1,4 @@
+import 'package:chat_app/routes.dart';
 import 'package:chat_app/screens/home/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +13,8 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.red[400],
         accentColor: Color(0xFFFEF9EB),
       ),
-      home: HomeScreen(),
+      initialRoute: HomeScreen.route,
+      routes: getRoutes(),
     );
   }
 }
