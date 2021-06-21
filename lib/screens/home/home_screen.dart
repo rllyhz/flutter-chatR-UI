@@ -4,6 +4,8 @@ import '../../constants.dart';
 import 'components/body.dart';
 
 class HomeScreen extends StatelessWidget {
+  static String route = '/HomeScreen';
+
   HomeScreen({Key? key}) : super(key: key);
 
   @override
