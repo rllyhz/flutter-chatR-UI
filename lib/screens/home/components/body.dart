@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../../constants.dart';
 import 'category_list.dart';
 
 class Body extends StatefulWidget {
@@ -19,6 +18,11 @@ class _BodyState extends State<Body> {
       children: <Widget>[
         CategoryList(
           selectedIndex: _selectedCategoryListIndex,
+          onTapCallback: (index) {
+            setState(() {
+              _selectedCategoryListIndex = index;
+            });
+          },
         ),
       ],
     );
