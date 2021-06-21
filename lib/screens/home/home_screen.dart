@@ -1,17 +1,44 @@
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatefulWidget {
+import '../../constants.dart';
+import 'components/body.dart';
+
+class HomeScreen extends StatelessWidget {
   HomeScreen({Key? key}) : super(key: key);
 
   @override
-  _HomeScreenState createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> {
-  @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text('Hello there!'),
+    return Scaffold(
+      backgroundColor: Theme.of(context).primaryColor,
+      appBar: _buildAppBar(),
+      body: Body(),
+    );
+  }
+
+  AppBar _buildAppBar() {
+    return AppBar(
+      leading: IconButton(
+        icon: Icon(Icons.menu),
+        color: Colors.white,
+        iconSize: iconSize,
+        onPressed: () {},
+      ),
+      title: Text(
+        'Chats',
+        style: TextStyle(
+          fontSize: 28.0,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+      elevation: 0.0,
+      actions: <Widget>[
+        IconButton(
+          icon: Icon(Icons.search),
+          iconSize: iconSize,
+          color: Colors.white,
+          onPressed: () {},
+        ),
+      ],
     );
   }
 }
