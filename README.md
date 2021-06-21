@@ -1,6 +1,6 @@
 # ChatR
 
-# LICENSE
+## LICENSE
 
 ```
 Copyright © 2021 Rully Ihza Mahendra
