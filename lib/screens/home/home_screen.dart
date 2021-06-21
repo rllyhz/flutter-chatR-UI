@@ -24,7 +24,7 @@ class HomeScreen extends StatelessWidget {
         onPressed: () {},
       ),
       title: Text(
-        'Chats',
+        appbarTitle,
         style: TextStyle(
           fontSize: 28.0,
           fontWeight: FontWeight.bold,
