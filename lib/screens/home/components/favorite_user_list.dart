@@ -1,3 +1,5 @@
+import 'package:chat_app/screens/chat/chat_screen.dart';
+import 'package:chat_app/screens/chat/screen_arguments.dart';
 import 'package:chat_app/utils/data_utils.dart';
 import 'package:flutter/material.dart';
 
@@ -43,7 +45,13 @@ class FavoriteUserList extends StatelessWidget {
               itemCount: favoriteUsers.length,
               itemBuilder: (BuildContext context, int index) {
                 return InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(
+                      context,
+                      ChatScreen.route,
+                      arguments: ScreenArguments(favoriteUsers[index]),
+                    );
+                  },
                   child: Padding(
                     padding: EdgeInsets.all(10.0),
                     child: Column(
