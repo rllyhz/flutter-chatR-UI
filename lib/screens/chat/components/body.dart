@@ -23,6 +23,7 @@ class _BodyState extends State<Body> {
         children: <Widget>[
           Expanded(
             child: Container(
+              margin: EdgeInsets.only(top: 10.0),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
@@ -37,17 +38,19 @@ class _BodyState extends State<Body> {
                 ),
                 child: ListView.builder(
                   padding: EdgeInsets.only(top: 16.0),
-                  itemCount: chats.length,
+                  itemCount: detailChat.length,
                   reverse: true,
                   itemBuilder: (BuildContext context, int index) {
-                    final Message message = chats[index];
+                    final Message message = detailChat[index];
                     final bool isCurrentUser = message.sender.id == rully.id;
+                    print("${message.sender.name}: $isCurrentUser");
                     return _buildMessageContents(message, isCurrentUser);
                   },
                 ),
               ),
             ),
           ),
+          _buildMessageComposer(),
         ],
       ),
     );

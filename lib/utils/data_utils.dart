@@ -4,49 +4,49 @@ import 'package:chat_app/models/user.dart';
 final User rully = User(
   id: 0,
   name: 'Rully',
-  imageUrl: 'assets/images/greg.jpg',
+  imageUrl: 'images/greg.jpg',
 );
 
 final User greg = User(
   id: 1,
   name: 'Greg',
-  imageUrl: 'assets/images/greg.jpg',
+  imageUrl: 'images/greg.jpg',
 );
 
 final User james = User(
   id: 2,
   name: 'James',
-  imageUrl: 'assets/images/james.jpg',
+  imageUrl: 'images/james.jpg',
 );
 
 final User john = User(
   id: 3,
   name: 'John',
-  imageUrl: 'assets/images/john.jpg',
+  imageUrl: 'images/john.jpg',
 );
 
 final User olivia = User(
   id: 4,
   name: 'Olivia',
-  imageUrl: 'assets/images/olivia.jpg',
+  imageUrl: 'images/olivia.jpg',
 );
 
 final User sam = User(
   id: 5,
   name: 'Sam',
-  imageUrl: 'assets/images/sam.jpg',
+  imageUrl: 'images/sam.jpg',
 );
 
 final User sophia = User(
   id: 6,
   name: 'Sophia',
-  imageUrl: 'assets/images/sophia.jpg',
+  imageUrl: 'images/sophia.jpg',
 );
 
 final User steven = User(
   id: 7,
   name: 'Steven',
-  imageUrl: 'assets/images/steven.jpg',
+  imageUrl: 'images/steven.jpg',
 );
 
 List<User> favoriteUsers = [sophia, steven, olivia, john, greg];

@@ -23,12 +23,20 @@ class ChatScreen extends StatelessWidget {
 
   AppBar _buildAppBar(User user) {
     return AppBar(
-      title: Text(
-        user.name,
-        style: TextStyle(
-          fontSize: 28.0,
-          fontWeight: FontWeight.bold,
-        ),
+      title: Row(
+        children: <Widget>[
+          CircleAvatar(
+            backgroundImage: AssetImage(user.imageUrl),
+          ),
+          SizedBox(width: 10.0),
+          Text(
+            user.name,
+            style: TextStyle(
+              fontSize: 28.0,
+              fontWeight: FontWeight.bold,
+            ),
+          )
+        ],
       ),
       elevation: 0.0,
       actions: <Widget>[
